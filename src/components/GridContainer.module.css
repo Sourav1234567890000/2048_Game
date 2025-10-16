@@ -1,0 +1,30 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 80px); /* 4x4 grid */
+  grid-gap: 10px;
+  background-color: #bbada0; /* board background */
+  padding: 10px;
+  border-radius: 6px;
+
+  margin: 50px auto;
+  /* margin-top: 2px; */
+}
+
+.boardWrapper {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  height: 90vh;  
+  margin-top: -70px;         /* full viewport height */
+}
+
+.gridItem {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: bold;
+  border-radius: 6px;
+}
