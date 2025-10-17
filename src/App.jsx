@@ -1,7 +1,5 @@
 import "./App.css";
 import { useState, useEffect } from "react";
-
-// Components (you can create simple components for GridContainer, ButtonContainer, DisplayScore, GameHeading)
 import GridContainer from "./components/GridContainer";
 import ButtonContainer from "./components/ButtonContainer";
 import DisplayScore from "./components/DisplayScore";
