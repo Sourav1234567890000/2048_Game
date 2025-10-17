@@ -1,6 +1,5 @@
 import DisplayScore from "./DisplayScore";
 import styles from "./GridContainer.module.css";
-// import ''; // Import your CSS file
 
 const GridContainer = ({ score, board }) => {
   const getTileColor = (num) => {
