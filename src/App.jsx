@@ -2,7 +2,6 @@ import "./App.css";
 import { useState, useEffect } from "react";
 import GridContainer from "./components/GridContainer";
 import ButtonContainer from "./components/ButtonContainer";
-import DisplayScore from "./components/DisplayScore";
 import GameHeading from "./components/GameHeading";
 
 function App() {
