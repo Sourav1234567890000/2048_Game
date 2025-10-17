@@ -35,23 +35,38 @@ const GridContainer = ({ score, board }) => {
   };
 
   return (
-    <div className={styles.boardWrapper}>
-      <div className={styles.gridContainer}>
-        {board.map((row, rowIndex) =>
-          row.map((tile, colIndex) => (
-            <div
-              key={`${rowIndex}-${colIndex}`}
-              className={styles.gridItem}
-              style={{
-                backgroundColor: getTileColor(tile),
-                color: tile > 4 ? "#f9f6f2" : "#776e65", // light text for big tiles
-              }}
-            >
-              {tile !== 0 ? tile : "-"}
-            </div>
-          ))
-        )}
-        <DisplayScore score={score}></DisplayScore>
+    <div className={styles.container}>
+      <div className={styles.leftSection}>
+        <div className={styles.gridContainer}>
+          {board.map((row, rowIndex) =>
+            row.map((tile, colIndex) => (
+              <div
+                key={`${rowIndex}-${colIndex}`}
+                className={styles.gridItem}
+                style={{
+                  backgroundColor: getTileColor(tile),
+                  color: tile > 4 ? "#f9f6f2" : "#776e65",
+                }}
+              >
+                {tile !== 0 ? tile : "-"}
+              </div>
+            ))
+          )}
+        </div>
+      </div>
+        <DisplayScore score={score} />
+
+      <div className={styles.rightSection}>
+        <h2>How to Play</h2>
+        <p>
+          Use <b>Arrow keys</b> or <b>W/A/S/D</b> to move tiles.
+          <br />
+          Combine tiles with the same number to merge them.
+          <br />
+          Each move spawns a new <b>2</b> or <b>4</b> tile.
+          <br />
+          Reach <b>2048</b> to win — no moves left means game over!
+        </p>
       </div>
     </div>
   );

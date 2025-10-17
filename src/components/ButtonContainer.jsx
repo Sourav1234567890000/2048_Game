@@ -1,8 +1,11 @@
 import styles from "./ButtonContainer.module.css";
 
-const ButtonContainer = ({ moveUp, moveDown, moveLeft, moveRight }) => {
+const ButtonContainer = ({ moveUp, moveDown, moveLeft, moveRight, restart }) => {
   return (
     <>
+      <button className={styles.restart} 
+      onClick={(e) => restart(e)}
+      >Restart</button>
       <div className={styles.butContainer}>
         <button className={styles.but} onClick={(e) => moveUp(e)}>
           &uarr; W

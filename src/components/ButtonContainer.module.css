@@ -24,3 +24,26 @@
   color: #333;                     
   transform: scale(1.05);           
 }
+
+.restart {
+  padding: 10px 20px;
+  background-color: #8f7a66; 
+  color: #f9f6f2;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.restart:hover {
+  background-color: #9e8b78; 
+  transform: scale(1.05);
+}
+
+.restart:active {
+  background-color: #7b6b59;
+  transform: scale(0.95);
+}
+
